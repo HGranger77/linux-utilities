@@ -1,6 +1,8 @@
 function venvc() {
         if [ $1 ]; then
+                deactivate
                 python3 -m venv ~/.virtualenvs/$1
+                . ~/.virtualenvs/$1/bin/activate
         fi
 }
 
@@ -11,3 +13,4 @@ function venvs() {
 }
 
 alias venvls="ls ~/.virtualenvs/"
+alias venvrm="rm -rf ~/.virtualenvs/"
