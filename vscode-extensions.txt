@@ -1,0 +1,10 @@
+rainbow-csv
+makefile-tools
+vscode-pdf
+
+python
+pylance
+python-debugger
+
+dev-containers
+container-tools

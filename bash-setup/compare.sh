@@ -1,0 +1,1 @@
+# Compare directory across two git branches and show files in one branch but not the other
