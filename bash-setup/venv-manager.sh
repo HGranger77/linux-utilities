@@ -1,7 +1,8 @@
 function venvc() {
         if [ $1 ]; then
                 deactivate
-                python3 -m venv ~/.virtualenvs/$1
+                # Python 3.13 unless another interpreter is given: venvc <name> [python]
+                ${2:-python3.13} -m venv ~/.virtualenvs/$1 &&
                 . ~/.virtualenvs/$1/bin/activate
         fi
 }
